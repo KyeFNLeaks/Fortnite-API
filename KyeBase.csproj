@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{76035849-152E-4A14-AF51-2769121E2E93}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KyeBase</RootNamespace>
+    <AssemblyName>Fortnite-API</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>fortnite.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoUpdater.NET">
+      <HintPath>..\..\Documents\auto\net40\AutoUpdater.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscordRPC">
+      <HintPath>..\..\Documents\DiscordRPC.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API\AES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="API\AES.Designer.cs">
+      <DependentUpon>AES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="API\Blog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="API\Blog.Designer.cs">
+      <DependentUpon>Blog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="API\BP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="API\BP.Designer.cs">
+      <DependentUpon>BP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="API\Cosmetics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="API\Cosmetics.Designer.cs">
+      <DependentUpon>Cosmetics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="API\KeyChain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="API\KeyChain.Designer.cs">
+      <DependentUpon>KeyChain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Application.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application.Designer.cs">
+      <DependentUpon>Application.cs</DependentUpon>
+    </Compile>
+    <Compile Include="API\brnews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="API\brnews.Designer.cs">
+      <DependentUpon>brnews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="API\eventflags.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="API\eventflags.Designer.cs">
+      <DependentUpon>eventflags.cs</DependentUpon>
+    </Compile>
+    <Compile Include="API\FNStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="API\FNStatus.Designer.cs">
+      <DependentUpon>FNStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="API\FNupdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="API\FNupdate.Designer.cs">
+      <DependentUpon>FNupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="API\LTM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="API\LTM.Designer.cs">
+      <DependentUpon>LTM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiscordRPC\DiscordRpc.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="API\PVE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="API\PVE.Designer.cs">
+      <DependentUpon>PVE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="API\Store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="API\Store.Designer.cs">
+      <DependentUpon>Store.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="API\AES.resx">
+      <DependentUpon>AES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\Blog.resx">
+      <DependentUpon>Blog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\BP.resx">
+      <DependentUpon>BP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\Cosmetics.resx">
+      <DependentUpon>Cosmetics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\KeyChain.resx">
+      <DependentUpon>KeyChain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application.resx">
+      <DependentUpon>Application.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\brnews.resx">
+      <DependentUpon>brnews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\eventflags.resx">
+      <DependentUpon>eventflags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\FNStatus.resx">
+      <DependentUpon>FNStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\FNupdate.resx">
+      <DependentUpon>FNupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\LTM.resx">
+      <DependentUpon>LTM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="API\PVE.resx">
+      <DependentUpon>PVE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\Store.resx">
+      <DependentUpon>Store.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fortnite.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
