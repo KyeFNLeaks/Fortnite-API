@@ -38,8 +38,8 @@
             this.versionLabel = new System.Windows.Forms.Label();
             this.creditsLabel = new System.Windows.Forms.Label();
             this.pagesPanel = new System.Windows.Forms.Panel();
-            this.page4Button = new System.Windows.Forms.Button();
-            this.page3Button = new System.Windows.Forms.Button();
+            this.Page4Button = new System.Windows.Forms.Button();
+            this.Page3Button = new System.Windows.Forms.Button();
             this.page1Button = new System.Windows.Forms.Button();
             this.page2Button = new System.Windows.Forms.Button();
             this.page1Panel = new System.Windows.Forms.Panel();
@@ -170,11 +170,11 @@
             // 
             this.versionLabel.Font = new System.Drawing.Font("Consolas", 10F);
             this.versionLabel.ForeColor = System.Drawing.Color.White;
-            this.versionLabel.Location = new System.Drawing.Point(694, 0);
+            this.versionLabel.Location = new System.Drawing.Point(679, 0);
             this.versionLabel.Name = "versionLabel";
-            this.versionLabel.Size = new System.Drawing.Size(106, 23);
+            this.versionLabel.Size = new System.Drawing.Size(121, 23);
             this.versionLabel.TabIndex = 0;
-            this.versionLabel.Text = "Version: 1.5";
+            this.versionLabel.Text = "Version: 1.5.1";
             // 
             // creditsLabel
             // 
@@ -190,8 +190,8 @@
             // pagesPanel
             // 
             this.pagesPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(40)))));
-            this.pagesPanel.Controls.Add(this.page4Button);
-            this.pagesPanel.Controls.Add(this.page3Button);
+            this.pagesPanel.Controls.Add(this.Page4Button);
+            this.pagesPanel.Controls.Add(this.Page3Button);
             this.pagesPanel.Controls.Add(this.page1Button);
             this.pagesPanel.Controls.Add(this.page2Button);
             this.pagesPanel.Dock = System.Windows.Forms.DockStyle.Left;
@@ -200,37 +200,37 @@
             this.pagesPanel.Size = new System.Drawing.Size(142, 394);
             this.pagesPanel.TabIndex = 0;
             // 
-            // page4Button
+            // Page4Button
             // 
-            this.page4Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
-            this.page4Button.FlatAppearance.BorderSize = 0;
-            this.page4Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.page4Button.Font = new System.Drawing.Font("Consolas", 10F);
-            this.page4Button.ForeColor = System.Drawing.Color.White;
-            this.page4Button.Location = new System.Drawing.Point(6, 121);
-            this.page4Button.Name = "page4Button";
-            this.page4Button.Size = new System.Drawing.Size(131, 42);
-            this.page4Button.TabIndex = 2;
-            this.page4Button.TabStop = false;
-            this.page4Button.Text = "Settings (Beta)";
-            this.page4Button.UseVisualStyleBackColor = false;
-            this.page4Button.Click += new System.EventHandler(this.page4Button_Click);
+            this.Page4Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
+            this.Page4Button.FlatAppearance.BorderSize = 0;
+            this.Page4Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Page4Button.Font = new System.Drawing.Font("Consolas", 10F);
+            this.Page4Button.ForeColor = System.Drawing.Color.White;
+            this.Page4Button.Location = new System.Drawing.Point(6, 121);
+            this.Page4Button.Name = "Page4Button";
+            this.Page4Button.Size = new System.Drawing.Size(131, 42);
+            this.Page4Button.TabIndex = 2;
+            this.Page4Button.TabStop = false;
+            this.Page4Button.Text = "Settings (Beta)";
+            this.Page4Button.UseVisualStyleBackColor = false;
+            this.Page4Button.Click += new System.EventHandler(this.Page4Button_Click);
             // 
-            // page3Button
+            // Page3Button
             // 
-            this.page3Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
-            this.page3Button.FlatAppearance.BorderSize = 0;
-            this.page3Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.page3Button.Font = new System.Drawing.Font("Consolas", 10F);
-            this.page3Button.ForeColor = System.Drawing.Color.White;
-            this.page3Button.Location = new System.Drawing.Point(6, 83);
-            this.page3Button.Name = "page3Button";
-            this.page3Button.Size = new System.Drawing.Size(131, 32);
-            this.page3Button.TabIndex = 1;
-            this.page3Button.TabStop = false;
-            this.page3Button.Text = "Credits";
-            this.page3Button.UseVisualStyleBackColor = false;
-            this.page3Button.Click += new System.EventHandler(this.page3Button_Click);
+            this.Page3Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
+            this.Page3Button.FlatAppearance.BorderSize = 0;
+            this.Page3Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Page3Button.Font = new System.Drawing.Font("Consolas", 10F);
+            this.Page3Button.ForeColor = System.Drawing.Color.White;
+            this.Page3Button.Location = new System.Drawing.Point(6, 83);
+            this.Page3Button.Name = "Page3Button";
+            this.Page3Button.Size = new System.Drawing.Size(131, 32);
+            this.Page3Button.TabIndex = 1;
+            this.Page3Button.TabStop = false;
+            this.Page3Button.Text = "Credits";
+            this.Page3Button.UseVisualStyleBackColor = false;
+            this.Page3Button.Click += new System.EventHandler(this.Page3Button_Click);
             // 
             // page1Button
             // 
@@ -587,6 +587,7 @@
             // 
             this.page4Panel.Controls.Add(this.groupBox1);
             this.page4Panel.Controls.Add(this.label6);
+            this.page4Panel.Enabled = false;
             this.page4Panel.Location = new System.Drawing.Point(1337, 1337);
             this.page4Panel.Name = "page4Panel";
             this.page4Panel.Size = new System.Drawing.Size(640, 359);
@@ -706,6 +707,7 @@
             this.page3Panel.Controls.Add(this.Kyetwitter);
             this.page3Panel.Controls.Add(this.label5);
             this.page3Panel.Controls.Add(this.label4);
+            this.page3Panel.Enabled = false;
             this.page3Panel.Location = new System.Drawing.Point(1337, 1337);
             this.page3Panel.Name = "page3Panel";
             this.page3Panel.Size = new System.Drawing.Size(640, 359);
@@ -905,7 +907,7 @@
         private System.Windows.Forms.Button BPbutton;
         private System.Windows.Forms.Button Keybutton;
         private System.Windows.Forms.Button Blogbutton;
-        private System.Windows.Forms.Button page3Button;
+        private System.Windows.Forms.Button Page3Button;
         private System.Windows.Forms.Panel page3Panel;
         private System.Windows.Forms.LinkLabel Slushtwitter;
         private System.Windows.Forms.LinkLabel BRtwitter;
@@ -920,7 +922,7 @@
         private System.Windows.Forms.ToolStripMenuItem showToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportAProblemToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hideToolStripMenuItem;
-        private System.Windows.Forms.Button page4Button;
+        private System.Windows.Forms.Button Page4Button;
         private System.Windows.Forms.Panel page4Panel;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button Greenbutton;
