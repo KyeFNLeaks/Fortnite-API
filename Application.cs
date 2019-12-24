@@ -73,11 +73,13 @@ namespace KyeBase
                     page2Panel.Location = new Point(1337, 1337);
                     page2Panel.Enabled = false;
                 }
+
                 if (page3Panel.Enabled == true)
                 {
                     page3Panel.Location = new Point(1337, 1337);
                     page3Panel.Enabled = false;
                 }
+
                 if (page4Panel.Enabled == true)
                 {
                     page4Panel.Location = new Point(1337, 1337);
@@ -98,11 +100,13 @@ namespace KyeBase
                     page1Panel.Location = new Point(1337, 1337);
                     page1Panel.Enabled = false;
                 }
+
                 if (page3Panel.Enabled == true)
                 {
                     page3Panel.Location = new Point(1337, 1337);
                     page3Panel.Enabled = false;
                 }
+
                 if (page4Panel.Enabled == true)
                 {
                     page4Panel.Location = new Point(1337, 1337);
@@ -205,7 +209,7 @@ namespace KyeBase
             AutoUpdater.Start("https://www.kyekillerbot.tk/Update.xml");
         }
 
-        private void page3Button_Click(object sender, EventArgs e)
+        private void Page3Button_Click(object sender, EventArgs e)
         {
             if (page3Panel.Enabled == false)
             {
@@ -214,11 +218,13 @@ namespace KyeBase
                     page1Panel.Location = new Point(1337, 1337);
                     page1Panel.Enabled = false;
                 }
+
                 if (page2Panel.Enabled == true)
                 {
                     page2Panel.Location = new Point(1337, 1337);
                     page2Panel.Enabled = false;
                 }
+
                 if (page4Panel.Enabled == true)
                 {
                     page4Panel.Location = new Point(1337, 1337);
@@ -276,7 +282,7 @@ namespace KyeBase
             FNAPI.ShowBalloonTip(1000, "Hidden", "I'm runnning in the background please click 'show' to reopen me.", ToolTipIcon.Info);
         }
 
-        private void page4Button_Click(object sender, EventArgs e)
+        private void Page4Button_Click(object sender, EventArgs e)
         {
             if (page4Panel.Enabled == false)
             {
@@ -285,11 +291,13 @@ namespace KyeBase
                     page1Panel.Location = new Point(1337, 1337);
                     page1Panel.Enabled = false;
                 }
+
                 if (page2Panel.Enabled == true)
                 {
                     page2Panel.Location = new Point(1337, 1337);
                     page2Panel.Enabled = false;
                 }
+
                 if (page3Panel.Enabled == true)
                 {
                     page3Panel.Location = new Point(1337, 1337);
