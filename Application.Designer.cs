@@ -64,6 +64,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.centerPanel = new System.Windows.Forms.Panel();
             this.page4Panel = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Hidebutton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Bluebutton = new System.Windows.Forms.Button();
             this.Greenbutton = new System.Windows.Forms.Button();
@@ -92,6 +95,7 @@
             this.page2Panel.SuspendLayout();
             this.centerPanel.SuspendLayout();
             this.page4Panel.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.page3Panel.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -585,13 +589,54 @@
             // 
             // page4Panel
             // 
+            this.page4Panel.Controls.Add(this.groupBox2);
             this.page4Panel.Controls.Add(this.groupBox1);
             this.page4Panel.Controls.Add(this.label6);
             this.page4Panel.Enabled = false;
-            this.page4Panel.Location = new System.Drawing.Point(1337, 1337);
+            this.page4Panel.Location = new System.Drawing.Point(148, 39);
             this.page4Panel.Name = "page4Panel";
             this.page4Panel.Size = new System.Drawing.Size(640, 359);
             this.page4Panel.TabIndex = 2;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.Hidebutton);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
+            this.groupBox2.Location = new System.Drawing.Point(171, 70);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(326, 139);
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Hide";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(6, 62);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(314, 60);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "Waring: You can only re-Show the tool \r\nagain by is by using the context menu \r\n(" +
+    "in the taskbar botton right) by right clicking.\r\n";
+            // 
+            // Hidebutton
+            // 
+            this.Hidebutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
+            this.Hidebutton.FlatAppearance.BorderSize = 0;
+            this.Hidebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Hidebutton.Font = new System.Drawing.Font("Consolas", 10F);
+            this.Hidebutton.ForeColor = System.Drawing.Color.White;
+            this.Hidebutton.Location = new System.Drawing.Point(6, 29);
+            this.Hidebutton.Name = "Hidebutton";
+            this.Hidebutton.Size = new System.Drawing.Size(91, 28);
+            this.Hidebutton.TabIndex = 8;
+            this.Hidebutton.TabStop = false;
+            this.Hidebutton.Text = "Hide Tool";
+            this.Hidebutton.UseVisualStyleBackColor = false;
+            this.Hidebutton.Click += new System.EventHandler(this.Hidebutton_Click);
             // 
             // groupBox1
             // 
@@ -607,7 +652,7 @@
             this.groupBox1.Size = new System.Drawing.Size(111, 229);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Colour";
+            this.groupBox1.Text = "Colours";
             // 
             // Bluebutton
             // 
@@ -866,6 +911,8 @@
             this.centerPanel.ResumeLayout(false);
             this.page4Panel.ResumeLayout(false);
             this.page4Panel.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.page3Panel.ResumeLayout(false);
             this.page3Panel.PerformLayout();
@@ -931,6 +978,9 @@
         private System.Windows.Forms.Button Redbutton;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button Bluebutton;
+        private System.Windows.Forms.Button Hidebutton;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label7;
     }
 }
 

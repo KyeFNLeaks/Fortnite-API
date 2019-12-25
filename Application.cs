@@ -338,5 +338,11 @@ namespace KyeBase
             topPanel.BackColor = Color.Blue;
             bottomPanel.BackColor = Color.Blue;
         }
+
+        private void Hidebutton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FNAPI.ShowBalloonTip(1000, "Hidden", "I'm runnning in the background please click 'show' to reopen me.", ToolTipIcon.Warning);
+        }
     }
 }
