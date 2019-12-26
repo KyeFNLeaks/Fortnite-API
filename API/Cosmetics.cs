@@ -26,7 +26,7 @@ namespace KyeBase.API
         private void Loadbutton_Click(object sender, EventArgs e)
         {
             WebClient client = new WebClient();
-            string downloadString = client.DownloadString("https://fortnite-api.ga/api/cosmeticids");
+            string downloadString = client.DownloadString("https://fortnite-api.de/api/cosmeticids");
             JArray json = JArray.Parse(downloadString);
             CosmeticsrichTextBox.Text = json.ToString(Formatting.Indented);
         }

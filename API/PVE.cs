@@ -26,7 +26,7 @@ namespace KyeBase
         private void PVEbutton_Click(object sender, EventArgs e)
         {
             WebClient client = new WebClient();
-            string downloadString = client.DownloadString("https://fortnite-api.ga/api/pveinformation");
+            string downloadString = client.DownloadString("https://fortnite-api.de/api/pveinformation");
             JObject json = JObject.Parse(downloadString);
             PVErichTextBox.Text = json.ToString(Formatting.Indented);
         }

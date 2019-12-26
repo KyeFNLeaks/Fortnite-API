@@ -27,7 +27,7 @@ namespace KyeBase.API
         {
 
             WebClient client = new WebClient();
-            string downloadString = client.DownloadString("https://fortnite-api.ga/api/keychain");
+            string downloadString = client.DownloadString("https://fortnite-api.de/api/keychain");
             JArray json = JArray.Parse(downloadString);
             KeyrichTextBox.Text = json.ToString(Formatting.Indented);
 

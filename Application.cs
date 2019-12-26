@@ -344,5 +344,11 @@ namespace KyeBase
             this.Hide();
             FNAPI.ShowBalloonTip(1000, "Hidden", "I'm runnning in the background please click 'show' to reopen me.", ToolTipIcon.Warning);
         }
+
+        private void Mainbutton_Click(object sender, EventArgs e)
+        {
+            Main main = new Main();
+            main.Show();
+        }
     }
 }

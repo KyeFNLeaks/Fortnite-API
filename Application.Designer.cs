@@ -49,6 +49,7 @@
             this.DiscordButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.page2Panel = new System.Windows.Forms.Panel();
+            this.Mainbutton = new System.Windows.Forms.Button();
             this.Blogbutton = new System.Windows.Forms.Button();
             this.Keybutton = new System.Windows.Forms.Button();
             this.BPbutton = new System.Windows.Forms.Button();
@@ -174,11 +175,11 @@
             // 
             this.versionLabel.Font = new System.Drawing.Font("Consolas", 10F);
             this.versionLabel.ForeColor = System.Drawing.Color.White;
-            this.versionLabel.Location = new System.Drawing.Point(679, 0);
+            this.versionLabel.Location = new System.Drawing.Point(694, 0);
             this.versionLabel.Name = "versionLabel";
-            this.versionLabel.Size = new System.Drawing.Size(121, 23);
+            this.versionLabel.Size = new System.Drawing.Size(106, 23);
             this.versionLabel.TabIndex = 0;
-            this.versionLabel.Text = "Version: 1.5.1";
+            this.versionLabel.Text = "Version: 1.6";
             // 
             // creditsLabel
             // 
@@ -348,6 +349,7 @@
             // 
             // page2Panel
             // 
+            this.page2Panel.Controls.Add(this.Mainbutton);
             this.page2Panel.Controls.Add(this.Blogbutton);
             this.page2Panel.Controls.Add(this.Keybutton);
             this.page2Panel.Controls.Add(this.BPbutton);
@@ -366,6 +368,22 @@
             this.page2Panel.Name = "page2Panel";
             this.page2Panel.Size = new System.Drawing.Size(630, 371);
             this.page2Panel.TabIndex = 0;
+            // 
+            // Mainbutton
+            // 
+            this.Mainbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
+            this.Mainbutton.FlatAppearance.BorderSize = 0;
+            this.Mainbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Mainbutton.Font = new System.Drawing.Font("Consolas", 10F);
+            this.Mainbutton.ForeColor = System.Drawing.Color.White;
+            this.Mainbutton.Location = new System.Drawing.Point(5, 170);
+            this.Mainbutton.Name = "Mainbutton";
+            this.Mainbutton.Size = new System.Drawing.Size(131, 32);
+            this.Mainbutton.TabIndex = 13;
+            this.Mainbutton.TabStop = false;
+            this.Mainbutton.Text = "Main Key";
+            this.Mainbutton.UseVisualStyleBackColor = false;
+            this.Mainbutton.Click += new System.EventHandler(this.Mainbutton_Click);
             // 
             // Blogbutton
             // 
@@ -593,7 +611,7 @@
             this.page4Panel.Controls.Add(this.groupBox1);
             this.page4Panel.Controls.Add(this.label6);
             this.page4Panel.Enabled = false;
-            this.page4Panel.Location = new System.Drawing.Point(148, 39);
+            this.page4Panel.Location = new System.Drawing.Point(1337, 1337);
             this.page4Panel.Name = "page4Panel";
             this.page4Panel.Size = new System.Drawing.Size(640, 359);
             this.page4Panel.TabIndex = 2;
@@ -604,7 +622,7 @@
             this.groupBox2.Controls.Add(this.Hidebutton);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(171, 70);
+            this.groupBox2.Location = new System.Drawing.Point(141, 51);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(326, 139);
             this.groupBox2.TabIndex = 8;
@@ -981,6 +999,7 @@
         private System.Windows.Forms.Button Hidebutton;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button Mainbutton;
     }
 }
 

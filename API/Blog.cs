@@ -28,7 +28,7 @@ namespace KyeBase.API
         {
 
             WebClient client = new WebClient();
-            string downloadString = client.DownloadString("https://fortnite-api.ga/api/blogposts");
+            string downloadString = client.DownloadString("https://fortnite-api.de/api/blogposts");
             JObject json = JObject.Parse(downloadString);
             BlogrichTextBox.Text = json.ToString(Formatting.Indented);
 

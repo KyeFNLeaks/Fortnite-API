@@ -26,7 +26,7 @@ namespace KyeBase
         private void AESbutton_Click(object sender, EventArgs e)
         {
             WebClient client = new WebClient();
-            string downloadString = client.DownloadString("https://fortnite-api.ga/api/aeskeys");
+            string downloadString = client.DownloadString("https://fortnite-api.de/api/aeskeys");
             JArray json = JArray.Parse(downloadString);
             AESrichTextBox.Text = json.ToString(Formatting.Indented);
         }

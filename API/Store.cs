@@ -26,7 +26,7 @@ namespace KyeBase
         private void loadButton_Click(object sender, EventArgs e)
         {
             WebClient client = new WebClient();
-            string downloadString = client.DownloadString("https://fortnite-api.ga/api/store");
+            string downloadString = client.DownloadString("https://fortnite-api.de/api/store");
             JObject json = JObject.Parse(downloadString);
             storerichTextBox.Text = json.ToString(Formatting.Indented);
         }

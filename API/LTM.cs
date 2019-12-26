@@ -26,7 +26,7 @@ namespace KyeBase
         private void LTMbutton_Click(object sender, EventArgs e)
         {
             WebClient client = new WebClient();
-            string downloadString = client.DownloadString("https://fortnite-api.ga/api/ltminformations");
+            string downloadString = client.DownloadString("https://fortnite-api.de/api/ltminformations");
             JObject json = JObject.Parse(downloadString);
             LTMrichTextBox.Text = json.ToString(Formatting.Indented);
         }
