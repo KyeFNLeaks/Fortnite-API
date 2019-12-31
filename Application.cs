@@ -137,21 +137,9 @@ namespace KyeBase
             main.Show();
         }
 
-        private void LTMbutton_Click(object sender, EventArgs e)
-        {
-            LTM main = new LTM();
-            main.Show();
-        }
-
         private void Statusbutton_Click(object sender, EventArgs e)
         {
             FNStatus main = new FNStatus();
-            main.Show();
-        }
-
-        private void PVEbutton_Click(object sender, EventArgs e)
-        {
-            PVE main = new PVE();
             main.Show();
         }
         private void DiscordButton_Click(object sender, EventArgs e)
@@ -162,12 +150,6 @@ namespace KyeBase
         private void UpdateButton_Click(object sender, EventArgs e)
         {
             FNupdate main = new FNupdate();
-            main.Show();
-        }
-
-        private void StoreButton_Click(object sender, EventArgs e)
-        {
-            Store main = new Store();
             main.Show();
         }
 
@@ -184,7 +166,7 @@ namespace KyeBase
 
         private void APIlinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://fortnite-api.ga/");
+            Process.Start("https://fortnite-api.de/");
         }
         private void BPbutton_Click(object sender, EventArgs e)
         {
@@ -195,12 +177,6 @@ namespace KyeBase
         private void Keybutton_Click(object sender, EventArgs e)
         {
             KeyChain main = new KeyChain();
-            main.Show();
-        }
-
-        private void Blogbutton_Click(object sender, EventArgs e)
-        {
-            Blog main = new Blog();
             main.Show();
         }
 
@@ -243,12 +219,12 @@ namespace KyeBase
 
         private void BRtwitter_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://twitter.com/fortniteapi_ga");
+            Process.Start("https://twitter.com/fortniteapi_de");
         }
 
         private void Slushtwitter_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://fortnite-api.ga/");
+            Process.Start("https://fortnite-api.de/");
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -348,6 +324,11 @@ namespace KyeBase
         private void Mainbutton_Click(object sender, EventArgs e)
         {
             Main main = new Main();
+            main.Show();
+        }
+        private void SPbutton_Click(object sender, EventArgs e)
+        {
+            SP main = new SP();
             main.Show();
         }
     }

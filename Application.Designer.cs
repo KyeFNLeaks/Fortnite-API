@@ -49,16 +49,13 @@
             this.DiscordButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.page2Panel = new System.Windows.Forms.Panel();
+            this.SPbutton = new System.Windows.Forms.Button();
             this.Mainbutton = new System.Windows.Forms.Button();
-            this.Blogbutton = new System.Windows.Forms.Button();
             this.Keybutton = new System.Windows.Forms.Button();
             this.BPbutton = new System.Windows.Forms.Button();
             this.Cosmeticsbutton = new System.Windows.Forms.Button();
-            this.StoreButton = new System.Windows.Forms.Button();
             this.UpdateButton = new System.Windows.Forms.Button();
-            this.PVEbutton = new System.Windows.Forms.Button();
             this.Statusbutton = new System.Windows.Forms.Button();
-            this.LTMbutton = new System.Windows.Forms.Button();
             this.EFbutton = new System.Windows.Forms.Button();
             this.Newsbrbutton = new System.Windows.Forms.Button();
             this.AESKeybutton = new System.Windows.Forms.Button();
@@ -175,11 +172,11 @@
             // 
             this.versionLabel.Font = new System.Drawing.Font("Consolas", 10F);
             this.versionLabel.ForeColor = System.Drawing.Color.White;
-            this.versionLabel.Location = new System.Drawing.Point(694, 0);
+            this.versionLabel.Location = new System.Drawing.Point(678, 0);
             this.versionLabel.Name = "versionLabel";
-            this.versionLabel.Size = new System.Drawing.Size(106, 23);
+            this.versionLabel.Size = new System.Drawing.Size(122, 23);
             this.versionLabel.TabIndex = 0;
-            this.versionLabel.Text = "Version: 1.6";
+            this.versionLabel.Text = "Version: 1.6.1";
             // 
             // creditsLabel
             // 
@@ -287,10 +284,10 @@
             this.APIlinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.APIlinkLabel.Location = new System.Drawing.Point(123, 116);
             this.APIlinkLabel.Name = "APIlinkLabel";
-            this.APIlinkLabel.Size = new System.Drawing.Size(122, 24);
+            this.APIlinkLabel.Size = new System.Drawing.Size(123, 24);
             this.APIlinkLabel.TabIndex = 5;
             this.APIlinkLabel.TabStop = true;
-            this.APIlinkLabel.Text = "fortnite-api.ga";
+            this.APIlinkLabel.Text = "fortnite-api.de";
             this.APIlinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.APIlinkLabel_LinkClicked);
             // 
             // APIbutton
@@ -349,16 +346,13 @@
             // 
             // page2Panel
             // 
+            this.page2Panel.Controls.Add(this.SPbutton);
             this.page2Panel.Controls.Add(this.Mainbutton);
-            this.page2Panel.Controls.Add(this.Blogbutton);
             this.page2Panel.Controls.Add(this.Keybutton);
             this.page2Panel.Controls.Add(this.BPbutton);
             this.page2Panel.Controls.Add(this.Cosmeticsbutton);
-            this.page2Panel.Controls.Add(this.StoreButton);
             this.page2Panel.Controls.Add(this.UpdateButton);
-            this.page2Panel.Controls.Add(this.PVEbutton);
             this.page2Panel.Controls.Add(this.Statusbutton);
-            this.page2Panel.Controls.Add(this.LTMbutton);
             this.page2Panel.Controls.Add(this.EFbutton);
             this.page2Panel.Controls.Add(this.Newsbrbutton);
             this.page2Panel.Controls.Add(this.AESKeybutton);
@@ -369,6 +363,22 @@
             this.page2Panel.Size = new System.Drawing.Size(630, 371);
             this.page2Panel.TabIndex = 0;
             // 
+            // SPbutton
+            // 
+            this.SPbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
+            this.SPbutton.FlatAppearance.BorderSize = 0;
+            this.SPbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SPbutton.Font = new System.Drawing.Font("Consolas", 10F);
+            this.SPbutton.ForeColor = System.Drawing.Color.White;
+            this.SPbutton.Location = new System.Drawing.Point(142, 132);
+            this.SPbutton.Name = "SPbutton";
+            this.SPbutton.Size = new System.Drawing.Size(131, 32);
+            this.SPbutton.TabIndex = 14;
+            this.SPbutton.TabStop = false;
+            this.SPbutton.Text = "Starter Packs";
+            this.SPbutton.UseVisualStyleBackColor = false;
+            this.SPbutton.Click += new System.EventHandler(this.SPbutton_Click);
+            // 
             // Mainbutton
             // 
             this.Mainbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
@@ -376,7 +386,7 @@
             this.Mainbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Mainbutton.Font = new System.Drawing.Font("Consolas", 10F);
             this.Mainbutton.ForeColor = System.Drawing.Color.White;
-            this.Mainbutton.Location = new System.Drawing.Point(5, 170);
+            this.Mainbutton.Location = new System.Drawing.Point(416, 94);
             this.Mainbutton.Name = "Mainbutton";
             this.Mainbutton.Size = new System.Drawing.Size(131, 32);
             this.Mainbutton.TabIndex = 13;
@@ -385,22 +395,6 @@
             this.Mainbutton.UseVisualStyleBackColor = false;
             this.Mainbutton.Click += new System.EventHandler(this.Mainbutton_Click);
             // 
-            // Blogbutton
-            // 
-            this.Blogbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
-            this.Blogbutton.FlatAppearance.BorderSize = 0;
-            this.Blogbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Blogbutton.Font = new System.Drawing.Font("Consolas", 10F);
-            this.Blogbutton.ForeColor = System.Drawing.Color.White;
-            this.Blogbutton.Location = new System.Drawing.Point(279, 132);
-            this.Blogbutton.Name = "Blogbutton";
-            this.Blogbutton.Size = new System.Drawing.Size(131, 32);
-            this.Blogbutton.TabIndex = 12;
-            this.Blogbutton.TabStop = false;
-            this.Blogbutton.Text = "Blog Posts";
-            this.Blogbutton.UseVisualStyleBackColor = false;
-            this.Blogbutton.Click += new System.EventHandler(this.Blogbutton_Click);
-            // 
             // Keybutton
             // 
             this.Keybutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
@@ -408,7 +402,7 @@
             this.Keybutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Keybutton.Font = new System.Drawing.Font("Consolas", 10F);
             this.Keybutton.ForeColor = System.Drawing.Color.White;
-            this.Keybutton.Location = new System.Drawing.Point(416, 132);
+            this.Keybutton.Location = new System.Drawing.Point(416, 56);
             this.Keybutton.Name = "Keybutton";
             this.Keybutton.Size = new System.Drawing.Size(131, 32);
             this.Keybutton.TabIndex = 11;
@@ -424,7 +418,7 @@
             this.BPbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BPbutton.Font = new System.Drawing.Font("Consolas", 10F);
             this.BPbutton.ForeColor = System.Drawing.Color.White;
-            this.BPbutton.Location = new System.Drawing.Point(142, 132);
+            this.BPbutton.Location = new System.Drawing.Point(142, 94);
             this.BPbutton.Name = "BPbutton";
             this.BPbutton.Size = new System.Drawing.Size(131, 32);
             this.BPbutton.TabIndex = 10;
@@ -449,22 +443,6 @@
             this.Cosmeticsbutton.UseVisualStyleBackColor = false;
             this.Cosmeticsbutton.Click += new System.EventHandler(this.Cosmeticsbutton_Click);
             // 
-            // StoreButton
-            // 
-            this.StoreButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
-            this.StoreButton.FlatAppearance.BorderSize = 0;
-            this.StoreButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StoreButton.Font = new System.Drawing.Font("Consolas", 10F);
-            this.StoreButton.ForeColor = System.Drawing.Color.White;
-            this.StoreButton.Location = new System.Drawing.Point(416, 94);
-            this.StoreButton.Name = "StoreButton";
-            this.StoreButton.Size = new System.Drawing.Size(131, 32);
-            this.StoreButton.TabIndex = 8;
-            this.StoreButton.TabStop = false;
-            this.StoreButton.Text = "Store";
-            this.StoreButton.UseVisualStyleBackColor = false;
-            this.StoreButton.Click += new System.EventHandler(this.StoreButton_Click);
-            // 
             // UpdateButton
             // 
             this.UpdateButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
@@ -481,22 +459,6 @@
             this.UpdateButton.UseVisualStyleBackColor = false;
             this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
-            // PVEbutton
-            // 
-            this.PVEbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
-            this.PVEbutton.FlatAppearance.BorderSize = 0;
-            this.PVEbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.PVEbutton.Font = new System.Drawing.Font("Consolas", 10F);
-            this.PVEbutton.ForeColor = System.Drawing.Color.White;
-            this.PVEbutton.Location = new System.Drawing.Point(142, 94);
-            this.PVEbutton.Name = "PVEbutton";
-            this.PVEbutton.Size = new System.Drawing.Size(131, 32);
-            this.PVEbutton.TabIndex = 6;
-            this.PVEbutton.TabStop = false;
-            this.PVEbutton.Text = "PVE Infomation";
-            this.PVEbutton.UseVisualStyleBackColor = false;
-            this.PVEbutton.Click += new System.EventHandler(this.PVEbutton_Click);
-            // 
             // Statusbutton
             // 
             this.Statusbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
@@ -512,22 +474,6 @@
             this.Statusbutton.Text = "FN Status";
             this.Statusbutton.UseVisualStyleBackColor = false;
             this.Statusbutton.Click += new System.EventHandler(this.Statusbutton_Click);
-            // 
-            // LTMbutton
-            // 
-            this.LTMbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
-            this.LTMbutton.FlatAppearance.BorderSize = 0;
-            this.LTMbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LTMbutton.Font = new System.Drawing.Font("Consolas", 10F);
-            this.LTMbutton.ForeColor = System.Drawing.Color.White;
-            this.LTMbutton.Location = new System.Drawing.Point(416, 56);
-            this.LTMbutton.Name = "LTMbutton";
-            this.LTMbutton.Size = new System.Drawing.Size(131, 32);
-            this.LTMbutton.TabIndex = 4;
-            this.LTMbutton.TabStop = false;
-            this.LTMbutton.Text = "LTM Infomation";
-            this.LTMbutton.UseVisualStyleBackColor = false;
-            this.LTMbutton.Click += new System.EventHandler(this.LTMbutton_Click);
             // 
             // EFbutton
             // 
@@ -667,7 +613,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(12, 51);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(111, 229);
+            this.groupBox1.Size = new System.Drawing.Size(111, 239);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Colours";
@@ -959,19 +905,15 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel centerPanel;
         private System.Windows.Forms.Button EFbutton;
-        private System.Windows.Forms.Button LTMbutton;
         private System.Windows.Forms.Button Statusbutton;
-        private System.Windows.Forms.Button PVEbutton;
         private System.Windows.Forms.Button DiscordButton;
         private System.Windows.Forms.Button UpdateButton;
-        private System.Windows.Forms.Button StoreButton;
         private System.Windows.Forms.Button Cosmeticsbutton;
         private System.Windows.Forms.Button APIbutton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.LinkLabel APIlinkLabel;
         private System.Windows.Forms.Button BPbutton;
         private System.Windows.Forms.Button Keybutton;
-        private System.Windows.Forms.Button Blogbutton;
         private System.Windows.Forms.Button Page3Button;
         private System.Windows.Forms.Panel page3Panel;
         private System.Windows.Forms.LinkLabel Slushtwitter;
@@ -1000,6 +942,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button Mainbutton;
+        private System.Windows.Forms.Button SPbutton;
     }
 }
 

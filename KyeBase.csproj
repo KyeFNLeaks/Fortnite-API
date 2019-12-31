@@ -81,12 +81,6 @@
     <Compile Include="API\AES.Designer.cs">
       <DependentUpon>AES.cs</DependentUpon>
     </Compile>
-    <Compile Include="API\Blog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="API\Blog.Designer.cs">
-      <DependentUpon>Blog.cs</DependentUpon>
-    </Compile>
     <Compile Include="API\BP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +104,12 @@
     </Compile>
     <Compile Include="API\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="API\SP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="API\SP.Designer.cs">
+      <DependentUpon>SP.cs</DependentUpon>
     </Compile>
     <Compile Include="Application.cs">
       <SubType>Form</SubType>
@@ -141,32 +141,11 @@
     <Compile Include="API\FNupdate.Designer.cs">
       <DependentUpon>FNupdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="API\LTM.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="API\LTM.Designer.cs">
-      <DependentUpon>LTM.cs</DependentUpon>
-    </Compile>
     <Compile Include="DiscordRPC\DiscordRpc.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="API\PVE.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="API\PVE.Designer.cs">
-      <DependentUpon>PVE.cs</DependentUpon>
-    </Compile>
-    <Compile Include="API\Store.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="API\Store.Designer.cs">
-      <DependentUpon>Store.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="API\AES.resx">
       <DependentUpon>AES.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="API\Blog.resx">
-      <DependentUpon>Blog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="API\BP.resx">
       <DependentUpon>BP.cs</DependentUpon>
@@ -179,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="API\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\SP.resx">
+      <DependentUpon>SP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Application.resx">
       <DependentUpon>Application.cs</DependentUpon>
@@ -195,9 +177,6 @@
     <EmbeddedResource Include="API\FNupdate.resx">
       <DependentUpon>FNupdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="API\LTM.resx">
-      <DependentUpon>LTM.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -208,12 +187,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="API\PVE.resx">
-      <DependentUpon>PVE.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="API\Store.resx">
-      <DependentUpon>Store.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
