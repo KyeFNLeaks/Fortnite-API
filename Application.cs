@@ -161,7 +161,7 @@ namespace KyeBase
 
         private void APIbutton_Click(object sender, EventArgs e)
         {
-            Process.Start("https://discordapp.com/invite/aZmsM8M");
+            Process.Start("https://discord.gg/3aTESEw");
         }
 
         private void APIlinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

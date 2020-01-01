@@ -20,7 +20,7 @@ namespace KyeBase.API
         {
             WebClient client = new WebClient();
             string downloadString = client.DownloadString("https://fortnite-api.de/api/starterkits");
-            JArray json = JArray.Parse(downloadString);
+            JObject json = JObject.Parse(downloadString);
             SPrichTextBox.Text = json.ToString(Formatting.Indented);
         }
 

@@ -176,7 +176,7 @@
             this.versionLabel.Name = "versionLabel";
             this.versionLabel.Size = new System.Drawing.Size(122, 23);
             this.versionLabel.TabIndex = 0;
-            this.versionLabel.Text = "Version: 1.6.1";
+            this.versionLabel.Text = "Version: 1.6.2";
             // 
             // creditsLabel
             // 
@@ -767,7 +767,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(280, 168);
             this.label5.TabIndex = 3;
-            this.label5.Text = "@KyeFNLeaks - Creator\r\n\r\n@fortniteapi_ga - API\r\n\r\n@ItsJokeZz - Main tool Designer" +
+            this.label5.Text = "@KyeFNLeaks - Creator\r\n\r\n@fortniteapi_de - API\r\n\r\n@ItsJokeZz - Main tool Designer" +
     "\r\n\r\n@Seren_Modz21 - Discord RPC";
             // 
             // label4
